@@ -1,0 +1,6 @@
+(define-struct point (x y z))
+(define (square a)(* a a))
+(define (distance p1 p2)
+  (if (and (point? p1) (point? p2))
+  (sqrt (+ (square (- (point-x p1) (point-x p2)))(square (- (point-y p1) (point-y p2)))(square (- (point-z p1) (point-z p2))) ))
+    'ERROR))
