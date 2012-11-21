@@ -1,7 +1,0 @@
-;10-8
-(define-struct tree (label left right))
-
-(define (balance-factor t)
-  (cond
-    [(empty? t) 0]
-    [else (+ 1 (max (balance-factor (tree-left t)) (balance-factor (tree-right t))))]))
