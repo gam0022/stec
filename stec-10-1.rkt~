@@ -1,0 +1,2 @@
+;10-1
+(define (trapeziod a b h) (* (+ a b) h 0.5))

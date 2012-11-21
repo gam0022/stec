@@ -1,0 +1,2 @@
+;10-2
+(define (sndwitch a l) (append (list a) l (list a)))
